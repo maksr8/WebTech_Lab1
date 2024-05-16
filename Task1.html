@@ -1,9 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk-UA">
     <head>
-
+        <title>
+            Форма для додавання викладача
+        </title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Розумєй Максим"/>
+        <meta name="description" content="Форма для додавання викладача"/>
+        <meta name="keywords" content="викладач, форма, додавання"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon"/>
     </head>
     <body>
-        
+        <header>
+            <h1>
+                <picture>
+                    <img src="human_logo.png" alt="icon"/>
+                </picture>
+                Форма для додавання викладача
+            </h1>
+        </header>
+        <main>
+            <form>
+                <label for="name">Прізвище ім'я по-батькові:</label><br/>
+                <input type="text" id="name" name="name" required/><br/>
+                <label for="sex">Стать:</label><br/>
+                <input list="sex" name="sex"/><br/>
+                <datalist id="sex">
+                    <option value="Чоловіча"/>
+                    <option value="Жіноча"/>
+                </datalist>
+                <label for="birth">Дата народження:</label><br/>
+                <input type="date" name="birth" required/><br/>
+                <label for="email">Електронна пошта:</label><br/>
+                <input type="text" id="email" name="email" required/><br/>
+                <label for="phone">Телефон:</label><br/>
+                <input type="tel" id="phone" name="phone" required/><br/>
+                <label for="color">Бажаний колір фону:</label><br/>
+                <input type="color" id="color" name="color"/><br/>
+                <label for="country">Країна:</label><br/>
+                <input type="text" id="country" name="country" required/><br/>
+                <label for="city">Місто:</label><br/>
+                <input type="text" id="city" name="city" required/><br/>
+                <label for="comment">Коментар:</label><br/>
+                <textarea id="comment" name="comment"></textarea><br/>
+            </form>
+        </main>
     </body>
 </html>
