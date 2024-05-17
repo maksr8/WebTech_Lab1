@@ -25,10 +25,10 @@
                 <label for="name">Прізвище ім'я по-батькові:</label><br/>
                 <input type="text" id="name" name="name" required/><br/>
                 <label for="sex">Стать:</label><br/>
-                <input list="sex" name="sex"/><br/>
+                <input list="sex" name="sex" required/><br/>
                 <datalist id="sex">
-                    <option value="Чоловіча"/>
-                    <option value="Жіноча"/>
+                    <option value="Чоловіча"></option>
+                    <option value="Жіноча"></option>
                 </datalist>
                 <label for="birth">Дата народження:</label><br/>
                 <input type="date" name="birth" required/><br/>
@@ -44,6 +44,7 @@
                 <input type="text" id="city" name="city" required/><br/>
                 <label for="comment">Коментар:</label><br/>
                 <textarea id="comment" name="comment"></textarea><br/>
+                <input type="submit" value="Додати">
             </form>
         </main>
     </body>
